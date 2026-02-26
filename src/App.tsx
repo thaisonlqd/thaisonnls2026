@@ -100,8 +100,12 @@ const App: React.FC = () => {
       if (!uploadData.success) {
         throw new Error(uploadData.error || 'Failed to save file locally');
       }
+      
+      // Show success notification
+      alert(`Đã lưu file thành công vào thư mục File_KHBD_Upload trên server!\nĐường dẫn: ${uploadData.filePath}`);
     } catch (err) {
       console.error('Local save error:', err);
+      alert('Có lỗi xảy ra khi lưu file lên server.');
     } finally {
       setIsUploadingToDrive(false);
     }
