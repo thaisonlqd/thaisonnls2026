@@ -12,7 +12,7 @@ import { DEFAULT_PPCT_CONTENT } from './data/defaultPpct';
 
 // Danh sách môn học
 const SUBJECTS = [
-  'Tin học'
+  'Tin học', 'Toán','KHTN','Ngữ Văn','KHXH'
 ];
 
 // Danh sách khối lớp
